@@ -1,0 +1,9 @@
+.active {
+    font-weight: bold;
+}
+
+.navigation-bar {
+    border: 1px solid #ccc;
+    padding:5px;
+    margin-bottom:20px;
+}

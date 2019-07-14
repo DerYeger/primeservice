@@ -22,7 +22,7 @@ public class PrimeGenerator implements Runnable {
 
     @Override
     public void run() {
-        final long startTime = System.currentTimeMillis();
+        final double startTime = System.currentTimeMillis();
 
         final ArrayList<Integer> knownPrimes = new ArrayList<>();
         knownPrimes.add(2);
@@ -46,7 +46,7 @@ public class PrimeGenerator implements Runnable {
             }
         }
 
-        final long endTime = System.currentTimeMillis();
+        final double endTime = System.currentTimeMillis();
         logger.debug("Completed prime generation in " + ((endTime - startTime) / 1000) + " seconds");
         primeRepository.setData(smallestPrimeDivisor);
     }
