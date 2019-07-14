@@ -1,7 +1,7 @@
-package eu.yeger.primetest.controller;
+package eu.yeger.primeservice.controller;
 
-import eu.yeger.primetest.exception.PrimalityTestException;
-import eu.yeger.primetest.service.PrimalityTestService;
+import eu.yeger.primeservice.exception.PrimalityTestException;
+import eu.yeger.primeservice.service.PrimalityTestService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.lang.NonNull;

@@ -1,14 +1,18 @@
-package eu.yeger.primetest.util;
+package eu.yeger.primeservice.util;
 
-import eu.yeger.primetest.repository.PrimeRepository;
+import eu.yeger.primeservice.repository.PrimeRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 
 public class PrimeGenerator implements Runnable {
 
+    private final Logger logger = LoggerFactory.getLogger(getClass());
+
     private final int[] smallestPrimeDivisor;
     private final PrimeRepository primeRepository;
-    final int maxValue;
+    private final int maxValue;
 
     public PrimeGenerator(final PrimeRepository primeRepository, final int maxValue) {
         this.primeRepository = primeRepository;
@@ -18,6 +22,8 @@ public class PrimeGenerator implements Runnable {
 
     @Override
     public void run() {
+        final long startTime = System.currentTimeMillis();
+
         final ArrayList<Integer> knownPrimes = new ArrayList<>();
         knownPrimes.add(2);
 
@@ -39,7 +45,9 @@ public class PrimeGenerator implements Runnable {
                 markPrime(number);
             }
         }
-        System.out.println("Prime generation finished");
+
+        final long endTime = System.currentTimeMillis();
+        logger.debug("Completed prime generation in " + ((endTime - startTime) / 1000) + " seconds");
         primeRepository.setData(smallestPrimeDivisor);
     }
 

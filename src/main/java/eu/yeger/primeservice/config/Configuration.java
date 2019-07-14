@@ -1,6 +1,6 @@
-package eu.yeger.primetest.config;
+package eu.yeger.primeservice.config;
 
-import eu.yeger.primetest.repository.PrimeRepository;
+import eu.yeger.primeservice.repository.PrimeRepository;
 import org.springframework.context.annotation.Bean;
 
 @org.springframework.context.annotation.Configuration

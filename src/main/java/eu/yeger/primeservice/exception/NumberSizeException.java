@@ -1,4 +1,4 @@
-package eu.yeger.primetest.exception;
+package eu.yeger.primeservice.exception;
 
 public class NumberSizeException extends PrimalityTestException {
 

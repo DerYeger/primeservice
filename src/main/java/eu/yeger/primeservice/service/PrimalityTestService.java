@@ -1,7 +1,7 @@
-package eu.yeger.primetest.service;
+package eu.yeger.primeservice.service;
 
-import eu.yeger.primetest.exception.PrimalityTestException;
-import eu.yeger.primetest.repository.PrimeRepository;
+import eu.yeger.primeservice.exception.PrimalityTestException;
+import eu.yeger.primeservice.repository.PrimeRepository;
 import org.springframework.stereotype.Service;
 
 @Service

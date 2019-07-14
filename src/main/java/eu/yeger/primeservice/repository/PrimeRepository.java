@@ -1,10 +1,10 @@
-package eu.yeger.primetest.repository;
+package eu.yeger.primeservice.repository;
 
-import eu.yeger.primetest.exception.NaturalNumberException;
-import eu.yeger.primetest.exception.NumberSizeException;
-import eu.yeger.primetest.exception.PrimalityTestException;
-import eu.yeger.primetest.exception.PrimeGenerationException;
-import eu.yeger.primetest.util.PrimeGenerator;
+import eu.yeger.primeservice.exception.NaturalNumberException;
+import eu.yeger.primeservice.exception.NumberSizeException;
+import eu.yeger.primeservice.exception.PrimalityTestException;
+import eu.yeger.primeservice.exception.PrimeGenerationException;
+import eu.yeger.primeservice.util.PrimeGenerator;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
