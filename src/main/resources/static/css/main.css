@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0.5cm;
+}
+
+input {
+    padding: 0.25em;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 90%;
+    }
+}

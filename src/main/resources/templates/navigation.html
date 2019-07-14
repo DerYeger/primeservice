@@ -1,0 +1,14 @@
+<style>
+    .active{
+        font-weight: bold;
+    }
+</style>
+<div xmlns:th="http://www.thymeleaf.org"
+     style="border: 1px solid #ccc;padding:5px;margin-bottom:20px;">
+
+<!--    <a th:href="@{/}" th:classappend="${#request.requestURI == '/' || #request.requestURI == '' ? 'active':''}">Index</a>-->
+    <div style="display: inline">
+        <a th:href="@{/}" th:classappend="${#request.requestURI == '/' ? 'active':''}">Home</a>
+        | <a th:href="@{/prime}" th:classappend="${#request.requestURI == '/prime' ? 'active':''}">Prime</a>
+    </div>
+</div>
