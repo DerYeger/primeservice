@@ -5,6 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class PrimeGenerator implements Runnable {
 
@@ -18,6 +19,7 @@ public class PrimeGenerator implements Runnable {
         this.primeRepository = primeRepository;
         this.maxValue = maxValue;
         smallestPrimeDivisor = new int[maxValue];
+        Arrays.fill(smallestPrimeDivisor, 2);
     }
 
     @Override

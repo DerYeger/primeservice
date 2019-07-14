@@ -4,10 +4,5 @@
 
 .container {
     margin: 0.25cm;
-}
-
-@media screen and (max-width: 1000px) {
-    .container {
-        width: 90%;
-    }
+    width: 90%;
 }

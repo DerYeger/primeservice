@@ -19,6 +19,16 @@ public class MainController implements ErrorController {
         return "primePage";
     }
 
+    @GetMapping("factor")
+    public String showFactor() {
+        return "factorPage";
+    }
+
+    @GetMapping("divisor")
+    public String showDivisor() {
+        return "divisorPage";
+    }
+
     @Override
     public String getErrorPath() {
         return "/error";

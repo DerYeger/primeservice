@@ -2,10 +2,10 @@ package eu.yeger.primeservice.exception;
 
 import org.springframework.http.HttpStatus;
 
-public class NaturalNumberException extends PrimeTestException {
+public class FactorException extends HttpStatusException {
 
-    public NaturalNumberException(final int value) {
-        super(value + " is not a natural number");
+    public FactorException() {
+        super("Unsupported number");
     }
 
     @Override

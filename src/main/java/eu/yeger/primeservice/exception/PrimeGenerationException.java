@@ -1,8 +1,15 @@
 package eu.yeger.primeservice.exception;
 
-public class PrimeGenerationException extends PrimalityTestException {
+import org.springframework.http.HttpStatus;
+
+public class PrimeGenerationException extends HttpStatusException {
 
     public PrimeGenerationException() {
-        super("Prime generation is not finished");
+        super("Prime generation in progress");
+    }
+
+    @Override
+    public HttpStatus getStatus() {
+        return HttpStatus.SERVICE_UNAVAILABLE;
     }
 }
