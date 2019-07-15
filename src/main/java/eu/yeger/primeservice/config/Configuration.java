@@ -6,8 +6,10 @@ import org.springframework.context.annotation.Bean;
 @org.springframework.context.annotation.Configuration
 public class Configuration {
 
+    public static final int MAX_VALUE = 40000000;
+
     @Bean
     public PrimeRepository primeRepository() {
-        return new PrimeRepository(40000000);
+        return new PrimeRepository(MAX_VALUE);
     }
 }
