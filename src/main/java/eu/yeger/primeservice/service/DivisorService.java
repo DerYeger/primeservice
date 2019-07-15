@@ -27,13 +27,13 @@ public class DivisorService {
         final Integer[] divisors = new Integer[divisorCount];
         Arrays.fill(divisors, 1);
 
-        int last_repeat = divisorCount;
+        int lastRepeat = divisorCount;
 
         for (int i = 0; i < distinctFactors.size(); i++) {
             final int prime = distinctFactors.get(i);
             final int exponent = exponents.get(i) + 1;
 
-            final int chunkSize = last_repeat;
+            final int chunkSize = lastRepeat;
             final int chunk_count = divisorCount / chunkSize;
             final int repeat = chunkSize / exponent;
 
@@ -55,7 +55,7 @@ public class DivisorService {
                 }
             }
 
-            last_repeat = repeat;
+            lastRepeat = repeat;
         }
 
         return Stream
