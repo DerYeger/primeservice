@@ -29,6 +29,11 @@ public class MainController implements ErrorController {
         return "divisorPage";
     }
 
+    @GetMapping("imprint")
+    public String showImprint() {
+        return "imprintPage";
+    }
+
     @Override
     public String getErrorPath() {
         return "/error";
