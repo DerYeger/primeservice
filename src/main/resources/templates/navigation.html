@@ -3,8 +3,8 @@
     <div style="display: inline">
         <a th:href="@{/}" th:classappend="${#request.requestURI == '/' ? 'active':''}">Home</a>
         | <a th:href="@{/prime}" th:classappend="${#request.requestURI == '/prime' ? 'active':''}">Prime</a>
-        | <a th:href="@{/factor}" th:classappend="${#request.requestURI == '/factor' ? 'active':''}">Factor</a>
-        | <a th:href="@{/divisor}" th:classappend="${#request.requestURI == '/divisor' ? 'active':''}">Divisor</a>
+        | <a th:href="@{/factors}" th:classappend="${#request.requestURI == '/factors' ? 'active':''}">Factor</a>
+        | <a th:href="@{/divisors}" th:classappend="${#request.requestURI == '/divisors' ? 'active':''}">Divisor</a>
         | <a th:href="@{/imprint}" th:classappend="${#request.requestURI == '/imprint' ? 'active':''}">Impressum</a>
     </div>
 </div>

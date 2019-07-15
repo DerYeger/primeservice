@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/divisor")
+@RequestMapping("/divisors")
 public class DivisorController {
 
     private final DivisorService divisorService;

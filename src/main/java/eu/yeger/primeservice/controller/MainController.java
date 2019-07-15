@@ -19,14 +19,14 @@ public class MainController implements ErrorController {
         return "primePage";
     }
 
-    @GetMapping("factor")
+    @GetMapping("factors")
     public String showFactor() {
-        return "factorPage";
+        return "factorsPage";
     }
 
-    @GetMapping("divisor")
+    @GetMapping("divisors")
     public String showDivisor() {
-        return "divisorPage";
+        return "divisorsPage";
     }
 
     @GetMapping("imprint")
