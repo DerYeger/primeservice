@@ -18,7 +18,7 @@ public class PrimeGenerator implements Runnable {
     public PrimeGenerator(final PrimeRepository primeRepository, final int maxValue) {
         this.primeRepository = primeRepository;
         this.maxValue = maxValue;
-        smallestPrimeDivisor = new int[maxValue];
+        smallestPrimeDivisor = new int[maxValue + 1];
         Arrays.fill(smallestPrimeDivisor, 2);
     }
 
@@ -29,7 +29,7 @@ public class PrimeGenerator implements Runnable {
         final ArrayList<Integer> knownPrimes = new ArrayList<>();
         knownPrimes.add(2);
 
-        for (int number = 3; number < maxValue; number += 2) {
+        for (int number = 3; number <= maxValue; number += 2) {
             boolean isPrime = true;
 
             for (final int prime : knownPrimes) {
