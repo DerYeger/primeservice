@@ -1,4 +1,4 @@
-const endpoint = "http://yeger.eu:8080/divisors/get";
+const endpoint = "http://yeger.eu/divisors/get";
 
 function getResult() {
     let number = document.getElementById("input").value;

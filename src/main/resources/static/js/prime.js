@@ -1,4 +1,4 @@
-const endpoint = "http://yeger.eu:8080/prime/test";
+const endpoint = "http://yeger.eu/prime/test";
 
 function getResult() {
     let number = document.getElementById("input").value;
