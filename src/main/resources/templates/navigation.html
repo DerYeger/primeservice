@@ -1,10 +1,7 @@
-<link rel="stylesheet" href="/css/navigation.css">
-<div xmlns:th="http://www.thymeleaf.org" class="navigation-bar">
-    <div style="display: inline">
-        <a th:href="@{/}" th:classappend="${#request.requestURI == '/' ? 'active':''}">Home</a>
-        | <a th:href="@{/prime}" th:classappend="${#request.requestURI == '/prime' ? 'active':''}">Prime</a>
-        | <a th:href="@{/factors}" th:classappend="${#request.requestURI == '/factors' ? 'active':''}">Factors</a>
-        | <a th:href="@{/divisors}" th:classappend="${#request.requestURI == '/divisors' ? 'active':''}">Divisors</a>
-        | <a th:href="@{/imprint}" th:classappend="${#request.requestURI == '/imprint' ? 'active':''}">Impressum</a>
-    </div>
+<div xmlns:th="http://www.thymeleaf.org" id="navigation-bar">
+    <a th:href="@{/}" th:classappend="${#request.requestURI == '/' ? 'active':''}">Home</a>
+    <a th:href="@{/prime}" th:classappend="${#request.requestURI == '/prime' ? 'active':''}">Prime</a>
+    <a th:href="@{/factors}" th:classappend="${#request.requestURI == '/factors' ? 'active':''}">Factors</a>
+    <a th:href="@{/divisors}" th:classappend="${#request.requestURI == '/divisors' ? 'active':''}">Divisors</a>
+    <a th:href="@{/imprint}" th:classappend="${#request.requestURI == '/imprint' ? 'active':''}">Impressum</a>
 </div>

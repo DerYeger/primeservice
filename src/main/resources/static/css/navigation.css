@@ -1,9 +1,26 @@
-.active {
+#navigation-bar {
+    background-color: rgba(255, 255, 255, 0.11);
+    padding:5px;
+    margin-bottom:20px;
+}
+
+#navigation-bar > a {
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    padding-right: 1em;
+    text-align: center;
+}
+
+#navigation-bar > a.active {
+    color: #03DAC6;
     font-weight: bold;
 }
 
-.navigation-bar {
-    border: 1px solid #ccc;
-    padding:5px;
-    margin-bottom:20px;
+@media screen and (max-width: 1000px) {
+    #navigation-bar > a {
+        float: none;
+        padding-right: 0;
+        width: 100%;
+    }
 }
