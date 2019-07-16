@@ -1,4 +1,4 @@
-const endpoint = "http://yeger.eu/factors/get";
+const endpoint = "http://yeger.eu/factors/";
 
 function getResult() {
     let number = document.getElementById("input").value;

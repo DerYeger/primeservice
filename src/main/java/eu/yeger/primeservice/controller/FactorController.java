@@ -19,7 +19,7 @@ public class FactorController {
         this.factorService = factorService;
     }
 
-    @GetMapping("/get")
+    @GetMapping("/")
     public ResponseEntity getFactor(@RequestParam final int number) {
         try {
             return ResponseEntity

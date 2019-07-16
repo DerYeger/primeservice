@@ -19,7 +19,7 @@ public class DivisorController {
         this.divisorService = divisorService;
     }
 
-    @GetMapping("/get")
+    @GetMapping("/")
     public ResponseEntity getDivisor(@RequestParam final int number) {
         try {
             return ResponseEntity
