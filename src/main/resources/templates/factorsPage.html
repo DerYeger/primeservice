@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143944514-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-143944514-1');
+    </script>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Factors</title>
@@ -13,20 +22,18 @@
 </head>
 
 <body>
-<nav>
     <th:block th:include="navigation.html" />
-</nav>
-<main>
-    <div class="container">
-        <div class="form-group">
-            <input title="Number" type="number" min="0" id="input" placeholder="Number" oninput="validateInput(arguments)">
+    <main>
+        <div class="container">
+            <div class="form-group">
+                <input title="Number" type="number" min="0" id="input" placeholder="Number" oninput="validateInput(arguments)">
+            </div>
+            <div class="form-group">
+                <button onclick="getResult()">Submit</button>
+            </div>
         </div>
-        <div class="form-group">
-            <button onclick="getResult()">Submit</button>
-        </div>
-    </div>
 
-</main>
+    </main>
 </body>
 
 <script src="/js/validation.js"></script>

@@ -1,24 +1,35 @@
-#navigation-bar {
+#main-navigation {
     background-color: rgba(255, 255, 255, 0.11);
-    padding:5px;
-    margin-bottom:20px;
+    background-size: auto;
+    height: 2.5em;
+    padding: 0.5em;
+    margin-bottom: 2em;
 }
 
-#navigation-bar > a {
+#main-navigation a {
     color: #FFFFFF;
     display: block;
     float: left;
-    padding-right: 1em;
+    padding-right: 0.75em;
     text-align: center;
+    text-decoration-line: none;
 }
 
-#navigation-bar > a.active {
+#main-navigation a:hover {
+    color: #03DAC6;
+}
+
+#main-navigation a.active {
     color: #03DAC6;
     font-weight: bold;
 }
 
-@media screen and (max-width: 1000px) {
-    #navigation-bar > a {
+@media screen and (max-width: 600px) {
+    #main-navigation {
+        height: auto;
+    }
+
+    #main-navigation a {
         float: none;
         padding-right: 0;
         width: 100%;
